@@ -3,7 +3,7 @@
 
 ## File
 ```
-datasets   # container of data  
+datasets      # container of data  
 CD_GZSL.py    # core code  
 util.py       # data processing
 
