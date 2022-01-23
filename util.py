@@ -61,9 +61,9 @@ def shuffle_latent(x):
 	x = x.squeeze(0)
 	return x
 def shuffle_z(x):
-	length = x.size(1)
-	index = torch.randperm(length)
-	x = x[:,index]
+	batch_length = x.size(0)
+	index = torch.randperm(batch_length)
+	x = x[index,:]
 	return x
 
 
